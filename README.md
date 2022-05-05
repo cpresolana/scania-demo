@@ -14,8 +14,6 @@ The webpack build and compilation is based on [barba-starter-template by Samuel 
 Installation:
 
 ```
-git clone https://github.com/Ihatetomatoes/barbajs-demos.git
-cd barbajs-css-transition
 npm install
 ```
 
