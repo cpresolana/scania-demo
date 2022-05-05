@@ -1,9 +1,9 @@
 # Barba.js with the CSS Plugin
 
-![Barba.js and CSS](../assets/img_barba-js-css.png)
+![Barba.js and CSS]
 
-Simple css page transitions using [Barba.js](https://barba.js.org/) and
-the [@barba/css](https://barba.js.org/docs/plugins/css/) plugin.
+Simple css page transitions using [Barba.js] and
+the [@barba/css] plugin.
 
 ## Build
 
