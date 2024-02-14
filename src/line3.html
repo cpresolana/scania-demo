@@ -13,7 +13,7 @@
 
 <body data-barba="wrapper">
 
-  <header data-barba="container" class="is-cover" data-barba-namespace="with-cover">
+  <div data-barba="container" class="is-cover" data-barba-namespace="with-cover">
     <div class="transition">
       <img src="images/myway.webp" alt="">
     </div>
@@ -22,28 +22,28 @@
 
     <a class="btn-back" href="index.html">← Indietro</a>
     <div class="filters">
-      <button class="color-btn" onclick="white()">
+      <button id="white-btn-3" class="color-btn">
         <label class="white">
           <input type="radio" name="color" value="white">
           <div class="layer"></div>
           <div class="color-btn"><span></span></div>
         </label>
       </button>
-      <button class="color-btn" onclick="red()">
+      <button id="red-btn-3" class="color-btn">
         <label class="red">
           <input type="radio" name="color" value="red">
           <div class="layer"></div>
           <div class="color-btn"><span></span></div>
         </label>
       </button>
-      <button class="color-btn" onclick="blue()">
+      <button id="blue-btn-3" class="color-btn">
         <label class="blue">
           <input type="radio" name="color" value="blue">
           <div class="layer"></div>
           <div class="color-btn"><span></span></div>
         </label>
       </button>
-      <button class="color-btn" onclick="grey()">
+      <button id="grey-btn-3" class="color-btn">
         <label class="grey">
           <input type="radio" name="color" value="grey">
           <div class="layer"></div>
@@ -51,47 +51,9 @@
         </label>
       </button>
     </div>
-  </header>
+  </div>
 
-  <script src="assets/app.js"></script>
-  <script>
-    window.addEventListener("load", (event) => {
-      pannellum.viewer('panorama', {
-        "type": "equirectangular",
-        "panorama": "images/line1_1.jpg",
-        "autoLoad": true
-      });
-    });
-    
-    function white() {
-      pannellum.viewer('panorama', {
-        "type": "equirectangular",
-        "panorama": "images/line1_1.jpg",
-        "autoLoad": true
-      });
-    }
-    function red() {
-      pannellum.viewer('panorama', {
-        "type": "equirectangular",
-        "panorama": "images/line1_1.jpg",
-        "autoLoad": true
-      });
-    }
-    function blue() {
-      pannellum.viewer('panorama', {
-        "type": "equirectangular",
-        "panorama": "images/line1_1.jpg",
-        "autoLoad": true
-      });
-    }
-    function grey() {
-      pannellum.viewer('panorama', {
-        "type": "equirectangular",
-        "panorama": "images/line1_1.jpg",
-        "autoLoad": true
-      });
-    }
-  </script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>

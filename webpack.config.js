@@ -10,11 +10,14 @@ module.exports = (env, argv) => ({
   devtool: argv.mode === 'development' ? 'source-map' : false,
   entry: [
     './src/js/app.js',
+    './src/js/line1.js',
+    './src/js/line2.js',
+    './src/js/line3.js',
     './src/css/app.scss',
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'assets/app.js',
+    filename: 'js/app.js',
   },
   optimization: {
     minimizer: [

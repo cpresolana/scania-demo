@@ -1,5 +1,8 @@
 import barba from '@barba/core';
 import barbaCss from '@barba/css';
+import './line1.js'
+import './line2.js'
+import './line3.js'
 
 // tell Barba to use the css plugin
 barba.use(barbaCss);
