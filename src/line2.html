@@ -55,11 +55,14 @@
 
   <script src="assets/app.js"></script>
   <script>
-    pannellum.viewer('panorama', {
-      "type": "equirectangular",
-      "panorama": "images/line1_1.jpg",
-      "autoLoad": true
+    window.addEventListener("load", (event) => {
+      pannellum.viewer('panorama', {
+        "type": "equirectangular",
+        "panorama": "images/line1_1.jpg",
+        "autoLoad": true
+      });
     });
+    
     function white() {
       pannellum.viewer('panorama', {
         "type": "equirectangular",

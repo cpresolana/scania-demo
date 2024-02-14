@@ -29,6 +29,12 @@ module.exports = (env, argv) => ({
           to: 'images/[name].[ext]',
         }],
       }),
+      new CopyPlugin({
+        patterns: [{
+          from: 'src/pannellum',
+          to: 'pannellum',
+        }],
+      }),
     ],
   },
   module: {
