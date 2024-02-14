@@ -8,32 +8,26 @@ const body = document.querySelector('body');
 
 // set background before everything to mantain a coherent bg color during transitions
 
-barba.hooks.before((data) => {
+/* barba.hooks.before((data) => {
   const background = data.current.container.dataset.background;
   body.style.setProperty('--page-background', 'background');
-});
+}); */
 
 barba.init({
+  preventRunning: true,
   transitions: [
     {
+      sync: false,
       name: 'home',
-      sync: true,
       to: { namespace: ['home'] },
-      once() { },
-      leave() { },
-      enter() { },
+      once() {
+      },
+      leave() {
+      },
+      enter() {
+      },
     }, {
-      name: 'fade',
-      to: { namespace: ['fade'] },
-      leave() { },
-      enter() { },
-    }, {
-      name: 'clip',
-      sync: true,
-      to: { namespace: ['clip'] },
-      leave() { },
-      enter() { },
-    }, {
+      sync: false,
       name: 'with-cover',
       to: { namespace: ['with-cover'] },
       leave() { },
