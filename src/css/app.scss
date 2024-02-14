@@ -238,12 +238,9 @@ input {
   display: none;
 }
 
-button {
+.color-btn {
   background: transparent;
   border: 0;
-}
-
-.button {
   display: inline-block;
   position: relative;
   width: 50px;
@@ -252,7 +249,7 @@ button {
   cursor: pointer;
 }
 
-.button span {
+.color-btn span {
   display: block;
   position: absolute;
   width: 50px;
@@ -270,43 +267,43 @@ button {
   transition: ease .3s;
 }
 
-.button span:hover {
+.color-btn span:hover {
   padding: 10px;
 }
 
-.white .button span {
+.white .color-btn span {
   background: #ffffff;
 }
 
-.grey .button span {
+.grey .color-btn span {
   background: #424242;
 }
 
-.orange .button span {
+.orange .color-btn span {
   background: #FF5722;
 }
 
-.red .button span {
+.red .color-btn span {
   background: #ff2222;
 }
 
-.amber .button span {
+.amber .color-btn span {
   background: #FFC107;
 }
 
-.lime .button span {
+.lime .color-btn span {
   background: #8BC34A;
 }
 
-.teal .button span {
+.teal .color-btn span {
   background: #009688;
 }
 
-.blue .button span {
+.blue .color-btn span {
   background: #2196F3;
 }
 
-.indigo .button span {
+.indigo .color-btn span {
   background: #3F51B5;
 }
 
