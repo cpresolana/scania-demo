@@ -168,20 +168,20 @@ section .screen:hover {
 }
 
 section .screen:nth-child(1) {
-  background: url(./images/preview1.jpg);
+  background: url(../images/preview1.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 section .screen:nth-child(2) {
-  background: url(./images/preview2.png);
+  background: url(../images/preview2.png);
   background-repeat: no-repeat;
   background-position: center;
 
 }
 
 section .screen:nth-child(3) {
-  background: url(./images/preview3.jpg);
+  background: url(../images/preview3.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
