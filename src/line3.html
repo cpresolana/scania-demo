@@ -7,13 +7,14 @@
   <title>Barba.js with Barba CSS Plugin</title>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link href="assets/app.css" rel="stylesheet">
+  <script src="assets/app.js"></script>
   <link rel="stylesheet" href="./pannellum/pannellum.css" />
   <script type="text/javascript" src="./pannellum/pannellum.js"></script>
 </head>
 
 <body data-barba="wrapper">
 
-  <div data-barba="container" class="is-cover" data-barba-namespace="with-cover">
+  <header data-barba="container" class="is-cover" data-barba-namespace="with-cover">
     <div class="transition">
       <img src="images/myway.webp" alt="">
     </div>
@@ -22,28 +23,28 @@
 
     <a class="btn-back" href="index.html">← Indietro</a>
     <div class="filters">
-      <button id="white-btn-3" class="color-btn">
+      <button class="color-btn" onclick="white()">
         <label class="white">
           <input type="radio" name="color" value="white">
           <div class="layer"></div>
           <div class="color-btn"><span></span></div>
         </label>
       </button>
-      <button id="red-btn-3" class="color-btn">
+      <button class="color-btn" onclick="red()">
         <label class="red">
           <input type="radio" name="color" value="red">
           <div class="layer"></div>
           <div class="color-btn"><span></span></div>
         </label>
       </button>
-      <button id="blue-btn-3" class="color-btn">
+      <button class="color-btn" onclick="blue()">
         <label class="blue">
           <input type="radio" name="color" value="blue">
           <div class="layer"></div>
           <div class="color-btn"><span></span></div>
         </label>
       </button>
-      <button id="grey-btn-3" class="color-btn">
+      <button class="color-btn" onclick="grey()">
         <label class="grey">
           <input type="radio" name="color" value="grey">
           <div class="layer"></div>
@@ -51,9 +52,48 @@
         </label>
       </button>
     </div>
-  </div>
+  </header>
 
   <script src="js/app.js"></script>
+  <script>
+    var viewer = pannellum.viewer('panorama', {
+      "type": "equirectangular",
+      "panorama": "images/line1_1.jpg",
+      "autoLoad": true
+    });
+
+    viewer.resize();
+
+    function white() {
+      pannellum.viewer('panorama', {
+        "type": "equirectangular",
+        "panorama": "images/line1_1.jpg",
+        "autoLoad": true
+      });
+    }
+    function red() {
+      pannellum.viewer('panorama', {
+        "type": "equirectangular",
+        "panorama": "images/line1_1.jpg",
+        "autoLoad": true
+      });
+    }
+    function blue() {
+      pannellum.viewer('panorama', {
+        "type": "equirectangular",
+        "panorama": "images/line1_1.jpg",
+        "autoLoad": true
+      });
+    }
+    function grey() {
+      pannellum.viewer('panorama', {
+        "type": "equirectangular",
+        "panorama": "images/line1_1.jpg",
+        "autoLoad": true
+      });
+    }
+  </script>
+
 </body>
 
 </html>
