@@ -7,8 +7,6 @@ import './line3.js'
 // tell Barba to use the css plugin
 barba.use(barbaCss);
 
-const body = document.querySelector('body');
-
 // set background before everything to mantain a coherent bg color during transitions
 
 /* barba.hooks.before((data) => {
@@ -17,24 +15,35 @@ const body = document.querySelector('body');
 }); */
 
 barba.init({
-  preventRunning: true,
+  debug: true,
   transitions: [
     {
       sync: false,
       name: 'home',
       to: { namespace: ['home'] },
-      once() {
-      },
-      leave() {
-      },
-      enter() {
-      },
+      once() { },
+      leave() { },
+      enter() { },
     }, {
       sync: false,
       name: 'with-cover',
+      from: { namespace: ['with-cover'] },
       to: { namespace: ['with-cover'] },
+      once() { },
       leave() { },
       enter() { },
     },
   ],
+  views: [{
+    namespace: 'with-cover',
+    beforeEnter() {
+      if (document.querySelector("#panorama") !== null) {
+        pannellum.viewer('panorama', {
+          "type": "equirectangular",
+          "panorama": "images/line1_1.jpg",
+          "autoLoad": true
+        });
+      }
+    },
+  }]
 });

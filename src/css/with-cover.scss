@@ -29,15 +29,15 @@
 }
 
 /* Cover back to top */
-// .with-cover-enter .transition {
-//     transform: translateY(0);
-// }
-// .with-cover-enter-active .transition {
-//     transition: transform 0.0.75s var(--easing);
-// }
-// .with-cover-enter-to .transition {
-//     transform: translateY(-100%);
-// }
+.with-cover-enter .transition {
+    transform: translateY(0);
+}
+.with-cover-enter-active .transition {
+    transition: transform 0.0.75s var(--easing);
+}
+.with-cover-enter-to .transition {
+    transform: translateY(-100%);
+}
 
 /* Cover down */
 .with-cover-enter .transition {

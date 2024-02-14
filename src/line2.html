@@ -22,7 +22,7 @@
 
     <a class="btn-back" href="index.html">← Indietro</a>
     <div class="filters">
-      <button class="color-btn" onclick="white()">
+      <button id="white-btn" class="color-btn" onclick="white()">
         <label class="white">
           <input type="radio" name="color" value="white">
           <div class="layer"></div>
@@ -60,6 +60,9 @@
       "panorama": "images/line1_1.jpg",
       "autoLoad": true
     });
+
+    const btn = document.querySelector("#white-btn");
+    btn.click();
     
     function white() {
       pannellum.viewer('panorama', {
