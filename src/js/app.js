@@ -40,7 +40,7 @@ barba.init({
       if (document.querySelector("#panorama") !== null) {
         pannellum.viewer('panorama', {
           "type": "equirectangular",
-          "panorama": "images/line1_1.webp",
+          "panorama": "images/line1_1.jpg",
           "autoLoad": true
         });
       }
