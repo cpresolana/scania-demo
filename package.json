@@ -1,7 +1,7 @@
 {
   "name": "barba-starter-template",
   "version": "1.0.0",
-  "description": "A simple starter template for setting up a ECMAScript 6 project with barba.js and webpack.",
+  "description": "Scania Demo",
   "main": "app.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development",
