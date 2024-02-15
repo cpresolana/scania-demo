@@ -3,6 +3,9 @@ import barbaCss from '@barba/css';
 import './line1.js'
 import './line2.js'
 import './line3.js'
+import loader from './line1.js'
+import loader2 from './line1.js'
+import loader3 from './line1.js'
 
 // tell Barba to use the css plugin
 barba.use(barbaCss);
@@ -45,5 +48,12 @@ barba.init({
         });
       }
     },
+    afterEnter() {
+      barba.hooks.after(() => {
+        loader();
+        loader2();
+        loader3();
+      });
+    }
   }]
 });
