@@ -1,11 +1,8 @@
 import barba from '@barba/core';
 import barbaCss from '@barba/css';
-import './line1.js'
-import './line2.js'
-import './line3.js'
 import loader from './line1.js'
-import loader2 from './line1.js'
-import loader3 from './line1.js'
+
+loader();
 
 // tell Barba to use the css plugin
 barba.use(barbaCss);
@@ -16,6 +13,10 @@ barba.use(barbaCss);
   const background = data.current.container.dataset.background;
   body.style.setProperty('--page-background', 'background');
 }); */
+
+barba.hooks.after(() => {
+  loader();
+});
 
 barba.init({
   debug: true,
@@ -48,12 +49,5 @@ barba.init({
         });
       }
     },
-    afterEnter() {
-      barba.hooks.after(() => {
-        loader();
-        loader2();
-        loader3();
-      });
-    }
   }]
 });
